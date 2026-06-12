@@ -1,0 +1,32 @@
+{
+  "numeric_features": [
+    "amount_sanctioned",
+    "team_size",
+    "trl"
+  ],
+  "categorical_features": [
+    "sector",
+    "tier",
+    "stage",
+    "hw_sw",
+    "women_founder"
+  ],
+  "all_features": [
+    "amount_sanctioned",
+    "team_size",
+    "trl",
+    "sector",
+    "tier",
+    "stage",
+    "hw_sw",
+    "women_founder"
+  ],
+  "target_column": "Whether Follow-on Funding Received",
+  "model_type": "RandomForestClassifier",
+  "test_accuracy": 0.6569,
+  "test_roc_auc": 0.7133,
+  "cv_roc_auc_mean": 0.7088,
+  "cv_roc_auc_std": 0.0486,
+  "training_samples": 1092,
+  "test_samples": 274
+}
