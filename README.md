@@ -5,13 +5,17 @@ This repository contains a Random Forest pipeline for predicting whether startup
 ---
 
 ## Project Structure
+
+```text
 tide_rf_pipeline/
-├── rf_pipeline.py # Main pipeline script
-├── requirements.txt # Python dependencies
-├── .gitignore # Ignore unnecessary files
-├── model_metadata.json # Saved model metadata
-├── rf_tide_model.pkl # Trained Random Forest model
-└── rf_model_report.png # Visual report of model performance
+├── rf_pipeline.py        # Main pipeline script
+├── requirements.txt      # Python dependencies
+├── .gitignore            # Ignore unnecessary files
+├── model_metadata.json   # Saved model metadata
+├── rf_tide_model.pkl     # Trained Random Forest model
+└── rf_model_report.png   # Visual report of model performance
+```
+
 
 
 ---
@@ -37,5 +41,6 @@ cd tide_rf_pipeline
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+python rf_pipeline.py
 
 
