@@ -60,10 +60,10 @@ python shap_analysis.py
 
 | Visualization | Description |
 | :--- | :--- |
-| **[Summary Bar Plot](shap_summary_bar.png)** | Ranks features by global importance based on the mean absolute SHAP value. |
-| **[Beeswarm Plot](shap_summary_beeswarm.png)** | Shows how the magnitude and direction of feature values correlate with the model's funding prediction. |
-| **[Dependence Grid](shap_dependence_grid.png)** | Visualizes the non-linear relationship between top features and their impact on the model output. |
-| **[Waterfall Examples](shap_waterfall_examples.png)** | Explains the specific decision path for individual True Positive and True Negative startup predictions. |
+| [Summary Bar Plot](rf_model_report.png) | Ranks features by global importance based on the mean absolute SHAP value. |
+| [Beeswarm Plot](shap_summary_beeswarm.png) | Shows how the magnitude and direction of feature values correlate with the model's funding prediction. |
+| [Dependence Grid](shap_dependence_grid.png) | Visualizes the non-linear relationship between top features and their impact on the model output. |
+| [Waterfall Examples](shap_waterfall_examples.png) | Explains the specific decision path for individual True Positive and True Negative startup predictions. |
 
 ## Key Findings
 * **Top Predictors:** `Amount Sanctioned` and `Team Size` emerged as the most significant drivers of the model's predictions.
