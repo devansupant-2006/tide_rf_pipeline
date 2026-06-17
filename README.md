@@ -43,4 +43,29 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python rf_pipeline.py
 
+## Model Interpretability & SHAP Analysis
+To move beyond "black-box" predictions, this repository includes a dedicated `shap_analysis.py` script. By utilizing **SHAP (SHapley Additive exPlanations)**, we can quantify the contribution of each feature to the model's decision-making process for startups under the TIDE 2.0 scheme.
+
+
+
+---
+
+### Visual Insights
+Our analysis produces the following diagnostic visualizations:
+### Running the Analysis
+After training the model using `rf_pipeline.py`, you can generate the SHAP diagnostic plots by running:
+```bash
+python shap_analysis.py
+
+| Visualization | Description |
+| :--- | :--- |
+| **[Summary Bar Plot](shap_summary_bar.png)** | Ranks features by global importance based on the mean absolute SHAP value. |
+| **[Beeswarm Plot](shap_summary_beeswarm.png)** | Shows how the magnitude and direction of feature values correlate with the model's funding prediction. |
+| **[Dependence Grid](shap_dependence_grid.png)** | Visualizes the non-linear relationship between top features and their impact on the model output. |
+| **[Waterfall Examples](shap_waterfall_examples.png)** | Explains the specific decision path for individual True Positive and True Negative startup predictions. |
+
+### Key Findings
+* **Top Predictors:** `Amount Sanctioned` and `Team Size` emerged as the most significant drivers of the model's predictions.
+* **Feature Impact:** The beeswarm plot demonstrates that higher values for certain features (red dots) push the model's output significantly toward a "Funded" classification, providing clear evidence for the decision-making patterns the Random Forest has learned.
+
 
