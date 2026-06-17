@@ -42,10 +42,10 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python rf_pipeline.py
+```
 
 ## Model Interpretability & SHAP Analysis
 To move beyond "black-box" predictions, this repository includes a dedicated `shap_analysis.py` script. By utilizing **SHAP (SHapley Additive exPlanations)**, we can quantify the contribution of each feature to the model's decision-making process for startups under the TIDE 2.0 scheme.
-```
 
 
 ---
